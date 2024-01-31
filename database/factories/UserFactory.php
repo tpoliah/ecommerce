@@ -36,3 +36,4 @@ class UserFactory extends Factory
         ]);
     }
 }
+register_shutdown_function
