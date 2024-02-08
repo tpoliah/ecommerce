@@ -10,9 +10,13 @@ return new class() extends Migration {
      */
     public function up(): void
     {
-        Schema::create('groups', function (Blueprint $table) {
+        Schema::create('shipping', function (Blueprint $table) {
             $table->id();
-            $table->string('group_title')->default('default');
+            $table->string('title', 50);
+            $table->decimal('price', 7, 2);
+            $table->tinyInteger('days');
+            $table->string('stripe_id')->nullable(true);
+            $table->tinyInteger('display_order')->default(1);
             $table->timestamps();
         });
     }
@@ -22,6 +26,6 @@ return new class() extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('groups');
+        Schema::dropIfExists('shipping');
     }
 };
