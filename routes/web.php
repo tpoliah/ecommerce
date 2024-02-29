@@ -31,7 +31,7 @@ Route::get('/store', [ProductController::class, 'index'])->name('products.index'
 Route::get('/shop', [ProductController::class, 'index'])->name('shop.index');
 Route::get('/products', [ProductController::class, 'index'])->name('store.index');
 
-Route::get('product-details/{id}', [DetailController::class, 'index'])->name('shop.details');
+Route::get('/details/{id}', [DetailController::class, 'index'])->name('shop.details');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
