@@ -12,6 +12,7 @@ class DetailController extends Controller
 
         $data = Product::singleProduct($id)->withPrice()->get()->first();
 
+        return view('pages.default.detailspage', compact('data'));
         return view('pages.testing.detailspage', compact('data'));
     }
 }
