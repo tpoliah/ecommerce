@@ -1,6 +1,5 @@
 <x-mylayouts.layout-default>
 
-
     <section class="ftco-section">
         <div class="container">
             <div class="row">
@@ -8,7 +7,7 @@
                     <a href="{{ $data->getImage() }}" class="image-popup"><img src="{{ $data->getImage() }}" class="img-fluid" alt="Colorlib Template"></a>
                 </div>
                 <div class="col-lg-6 product-details pl-md-5 ftco-animate">
-                    <h3>{{ $data->product_title }}</h3>
+                    <h3>{{ $data->title }}</h3>
                     <div class="rating d-flex">
                         <p class="text-left mr-4">
                             <a href="#" class="mr-2">5.0</a>
@@ -27,62 +26,40 @@
                     </div>
                     <p class="price"><span>${{ $data->getPrice() }}</span></p>
 
-                    <p>{{ $data->product_short_description }}</p>
-
-                    {{-- <p>A small river named Duden flows by their place and supplies it with the necessary
-                        regelialia. It
-                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                    <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
-                        would have been rewritten a thousand times and everything that was left from its origin would be
-                        the word "and" and the Little Blind Text should turn around and return to its own, safe country.
-                        But nothing the copy said could convince her and so it didn’t take long until a few insidious
-                        Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their
-                        agency, where they abused her for their.
-                    </p> --}}
+                    <div>{{ $data->short_description }}</div>
+                    <div>{{ $data->full_description }}</div>
 
                     <form class="form-group" action="{{ route('cart.store') }}" method="POST">
                         @csrf
                         @method('PUT')
-                        <form class="form-group" action="{{ route('cart.store') }}" method="POST">
-                            @csrf
-                            @method('PUT')
-                            <div class="row mt-4">
 
-                                <div class="w-100"></div>
-                                <div class="input-group col-md-6 d-flex mb-3">
-                                    <span class="input-group-btn mr-2">
-                                        <button type="button" class="quantity-left-minus btn details-quantity-control" id="details-minus" data-type="minus" data-field="">
-                                            <i class="ion-ios-remove"></i>
-                                        </button>
-                                    </span>
-                                    <input type="text" id="quantity" name="cart_quantity" class="form-control input-number" value="1" min="1" max="100">
-                                    <span class="input-group-btn ml-2">
-                                        <button type="button" class="quantity-right-plus btn details-quantity-control" id="details-plus" data-type="plus" data-field="">
-                                            <i class="ion-ios-add"></i>
-                                        </button>
-                                    </span>
-                                </div>
-                                <div class="w-100"></div>
-                                <div class="col-md-12">
-                                    <p style="color: #000;">80 piece available</p>
-                                </div>
+                        <div class="row mt-4">
+
+                            <div class="w-100"></div>
+                            <div class="input-group col-md-6 d-flex mb-3">
+                                <span class="input-group-btn mr-2">
+                                    <button type="button" class="quantity-left-minus btn details-quantity-control" id="details-minus" data-type="minus" data-field="">
+                                        <i class="ion-ios-remove"></i>
+                                    </button>
+                                </span>
+                                <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+                                <span class="input-group-btn ml-2">
+                                    <button type="button" class="quantity-right-plus btn details-quantity-control" id="details-plus" data-type="plus" data-field="">
+                                        <i class="ion-ios-add"></i>
+                                    </button>
+                                </span>
                             </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-12">
+                                <p style="color: #000;">80 piece available</p>
+                            </div>
+                        </div>
 
 
-                            <input type="hidden" name="product_id" value="{{ $data->id }}">
-
-                        </form>
-
-
-                        <button type="submit" class="btn btn-black py-3 px-5">Add to Cart</button>
                         <input type="hidden" name="product_id" value="{{ $data->id }}">
 
-
+                        <button type="submit" class="btn btn-black py-3 px-5">Add to Cart</button>
                     </form>
-
-
-
-
 
                 </div>
             </div>
@@ -217,4 +194,4 @@
         </div>
     </section>
 
-    </x-mylayouts.layout-for-app0>
+</x-mylayouts.layout-default>
