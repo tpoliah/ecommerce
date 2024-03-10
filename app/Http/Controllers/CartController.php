@@ -17,6 +17,6 @@ class CartController extends Controller
 
         //  dd($cart_data);
 
-        return view('pages.testing.cartpage', compact('cart_data'));
+        return view('pages.default.cartpage', compact('cart_data'));
     }
 }

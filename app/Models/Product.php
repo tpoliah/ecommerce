@@ -58,7 +58,7 @@ class Product extends Model
 
     public function getCartQuantityPrice()
     {
-        $this->getPrice() * $this->pivot->quantity;
+        return $this->getPrice() * $this->pivot->quantity;
     }
 
     public function getLink()
