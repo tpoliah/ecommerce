@@ -11,21 +11,25 @@ class ProductCollectionHelper extends Collection
 
     public function calculateSubtotal()
     {
+        $product_data = $this->all();
+        foreach ($product_data as $data) {
+            $this->subtotal += $data->getCartQuantityPrice();
+        }
         return false;
     }
 
     public function calculateTotal()
     {
-        return false;
+        return $this->total = $this->subtotal;
     }
 
     public function getSubtotal()
     {
-        return false;
+        return $this->subtotal;
     }
 
     public function getTotal()
     {
-        return false;
+        return $this->total;
     }
 }

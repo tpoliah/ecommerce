@@ -31,8 +31,7 @@ class Product extends Model
     /** ============== SCOPES ============================ */
 
     /** ============== FUNCTIONS ============================ */
-
-    public function scopeWithPrice(Builder $query, array $group_id = [1])
+    public function scopewithPrices(Builder $query, array $group_id = [1])
     {
         $query->where('products.id', '>', 0);
     }
@@ -57,7 +56,7 @@ class Product extends Model
         return $this->price;
     }
 
-    public function getCartQuantity()
+    public function getCartQuantityPrice()
     {
         $this->getPrice() * $this->pivot->quantity;
     }

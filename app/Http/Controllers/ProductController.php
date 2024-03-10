@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $product_data = Product::withPrice()->get();
+        $product_data = Product::withPrices()->get();
 
         return view('pages.default.productspage', compact('product_data'));
         return view('pages.testing.productspage', compact('product_data'));
