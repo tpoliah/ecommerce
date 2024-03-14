@@ -1,6 +1,4 @@
 <x-mylayouts.layout-default>
-
-
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row">
@@ -38,7 +36,8 @@
                                         </div>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                        <a href="{{ route('cart.addfromstorepage', ['id' => $data->id]) }}" 
+                                            class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                                     class="ion-ios-add ml-1"></i></span></a>
                                         <a href="{{ $data->getLink() }}" class="buy-now text-center py-2">View<span><i
                                                     class="ion-ios-cart ml-1"></i></span></a>
