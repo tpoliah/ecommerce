@@ -6,6 +6,7 @@ use App\Http\Controllers\CheckoutPaymentController;
 use App\Http\Controllers\CheckoutSuccessController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\subscriptions\SubscriptionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -29,9 +30,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/store', [ProductController::class, 'index'])->name('products.index');
 
 Route::get('/shop', [ProductController::class, 'index'])->name('shop.index');
+
 Route::get('/products', [ProductController::class, 'index'])->name('store.index');
 
 Route::get('/details/{id}', [DetailController::class, 'index'])->name('shop.details');
+
+// WHAT DOES THIS ROUTE DO?
+Route::get('subscriptions', [SubscriptionController::class, 'index'])->name('subscription.index');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
@@ -51,4 +56,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/checkout/{payment}/testing', [CheckoutPaymentController::class, 'index'])->name('checkout.success.testing');
 
     Route::get('/checkout/success/{id}', [CheckoutSuccessController::class, 'index'])->name('checkout.success');
+
+    // comments here
+    Route::post('subscriptions/{id}', [SubscriptionController::class, 'purchase'])->name('subscriptions.purchase');
+
+    // comments here
+    Route::get('subscriptions/success/{id}', [SubscriptionController::class, 'success'])->name('subscriptions.success');
 });

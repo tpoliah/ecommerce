@@ -3,6 +3,8 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\subscriptions\Subscription;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -12,7 +14,9 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens;
+    use HasFactory;
+    use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -47,9 +51,7 @@ class User extends Authenticatable
 
     /* ====================== RELATIONSHIPS ============================== */
     /**
-     * The products that belong to the User
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     * The products that belong to the User.
      */
     public function products(): BelongsToMany
     {
@@ -58,11 +60,8 @@ class User extends Authenticatable
             ->withTimestamps();
     }
 
-
     /**
-     * Get all of the addresses for the User
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * Get all of the addresses for the User.
      */
     public function addresses(): HasMany
     {
@@ -75,6 +74,24 @@ class User extends Authenticatable
     public function orders(): HasMany
     {
         return $this->hasMany(Order::class);
+    }
+
+    /**
+     * The activeSubscriptions that belong to the User.
+     */
+    public function activeSubscriptions(): BelongsToMany
+    {
+        return $this->belongsToMany(Subscription::class, 'subscription_orders')
+        ->withPivot('id', 'group_id', 'checkout_id', 'checkout_subscription_id', 'status', 'cancel_at', 'payment_status')
+        ->where(function (Builder $query) {
+            $query->where('status', 'active')
+            ->orWhere(function (Builder $query) {
+                $query->where('status', 'pending_cancel')
+                ->where('cancel_at', '>', now());
+            });
+        })
+        ->withTimestamps()
+        ->reorder('created_at', 'desc');
     }
 
     /* ====================== FUNCTION ============================== */
