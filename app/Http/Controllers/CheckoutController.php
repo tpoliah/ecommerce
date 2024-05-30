@@ -15,15 +15,14 @@ class CheckoutController extends Controller
             $group_ids = $user->getGroups();
         }
 
-
         $cart_data = $user->products()->withPrices()->get();
-        
+
         $cart_data->calculateSubtotal();
-        
+
         $shipping_helper = new ShippingHelper();
-        
+
         $shipping_data = $shipping_helper->getGroupShippingOptions($group_ids);
-        
+
         return view('pages.testing.checkoutpage', compact('cart_data', 'shipping_data'));
     }
 }

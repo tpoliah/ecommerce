@@ -2,11 +2,10 @@
 
 namespace App\Models;
 
-use App\Models\OrderProduct;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Order extends Model
 {
@@ -26,7 +25,7 @@ class Order extends Model
     /**
      * Get all of the order_products for the Order.
      */
-    public function order_product(): HasMany
+    public function order_products(): HasMany
     {
         return $this->hasMany(OrderProduct::class, 'order_id');
     }
