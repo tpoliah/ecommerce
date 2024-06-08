@@ -105,7 +105,7 @@ class StripeCheckout
      */
     public function getCheckoutOrder($session_id)
     {
-        return $this->stripe->checkout->sessions->retrieve($session_id[]);
+        return $this->stripe->checkout->sessions->retrieve($session_id, []);
     }
 
     public function isCheckoutCompleted($checkout_session)
@@ -129,7 +129,7 @@ class StripeCheckout
         return [
             'subtotal' => $checkout_session->amount_subtotal / 100,
             'total' => $checkout_session->amount_total / 100,
-            'shipping_id' => 1,
+            'stripe_id' => $checkout_session->shipping_cost->shipping_rate,
         ];
     }
 } // end Class
