@@ -93,7 +93,7 @@
             <div class="row justify-content-center">
                 <div class="col col-lg-5 col-md-6 mt-5 cart-wrap ftco-animate">
                     <div class="cart-total mb-3">
-                        <h3>Cart Total</h3>
+                        <h3>Cart Totals</h3>
                         <p class="d-flex">
                             <span>Subtotal</span>
                             <span>${{ CustomHelper::formatPrice($cart_data->getSubtotal()) }}</span>
