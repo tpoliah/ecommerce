@@ -95,18 +95,13 @@
                             <h3 class="billing-heading mb-4">Cart Total</h3>
                             <p class="d-flex">
                                 <span>Subtotal</span>
-                                <span>{{ $cart_data->getSubtotal() }}</span>
+                                <span>${{ CustomHelper::formatPrice($cart_data->getSubtotal()) }}</span>
                             </p>
                             
-                            </p>
-                            <p class="d-flex">
-                                <span>Discount</span>
-                                <span>$3.00</span>
-                            </p>
                             <hr>
                             <p class="d-flex total-price">
                                 <span>Total</span>
-                                <span>{{ $cart_data->getTotal() }}</span>
+                                <span>${{ CustomHelper::formatPrice($cart_data->getSubtotal()) }}</span>
                             </p>
                         </div>
                     </div>

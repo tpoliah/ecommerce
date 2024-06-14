@@ -80,7 +80,7 @@
                                         </div>
                                     </td>
 
-                                    <td class="total">${{ $data->getCartQuantityPrice() }}</td>
+                                    <td class="total">${{ CustomHelper::formatPrice($data->getCartQuantityPrice()) }}</td>
                                 </tr><!-- END TR-->
 
                                 @endforeach
@@ -100,19 +100,11 @@
                         </p>
 
                         <hr>
-                        <p class="d-flex">
-                            <span>Standard Shipping</span>
-                            <span>+$10.00</span>
-                        </p>
-                        <p class="d-flex">
-                            <span>Express Shipping</span>
-                            <span>+$13.00</span>
-                        </p>
 
-                        {{-- <p class="d-flex total-price">
+                         <p class="d-flex total-price">
                             <span>Total</span>
-                            <span>${{ $cart_data->getTotal() }}</span>
-                        </p> --}}
+                            <span>${{ CustomHelper::formatPrice($cart_data->getSubtotal()) }}</span>
+                        </p> 
                     </div>
                     <p class="text-center"><a href="{{ route('checkout.index') }}"
                             class="btn btn-primary py-3 px-4">Proceed to
