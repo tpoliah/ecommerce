@@ -11755,12 +11755,12 @@ h5,
 }
 
 .ftco-navbar-light.scrolled .nav-item.active>a {
-    color: #ffa45c !important;
+    color: #000000 !important;
 }
 
 .ftco-navbar-light.scrolled .nav-item.cta>a {
     color: #fff !important;
-    background: #ffa45c;
+    background: #28a745;
     border: none !important;
 }
 
@@ -11770,7 +11770,7 @@ h5,
 }
 
 .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
-    border-color: #ffa45c;
+    border-color: #28a745;
 }
 
 @media (max-width: 991.98px) {
@@ -12408,26 +12408,26 @@ h5,
 }
 
 .btn.btn-primary {
-    background: #ffa45c;
-    border: 1px solid #ffa45c;
+    background: #28a745;
+    border: 1px solid #28a745;
     color: #fff;
 }
 
 .btn.btn-primary:hover {
-    border: 1px solid #ffa45c;
+    border: 1px solid #28a745;
     background: transparent;
     color: #ffa45c;
 }
 
 .btn.btn-primary.btn-outline-primary {
-    border: 1px solid #ffa45c;
+    border: 1px solid #28a745;
     background: transparent;
     color: #ffa45c;
 }
 
 .btn.btn-primary.btn-outline-primary:hover {
     border: 1px solid transparent;
-    background: #ffa45c;
+    background: #28a745;
     color: #fff;
 }
 
@@ -12438,8 +12438,8 @@ h5,
 }
 
 .btn.btn-white:hover {
-    background: #ffa45c;
-    border: 1px solid #ffa45c;
+    background: #28a745;
+    border: 1px solid #28a745;
     color: #fff;
 }
 
@@ -12451,7 +12451,7 @@ h5,
 
 .btn.btn-white.btn-outline-white:hover {
     border: 1px solid transparent;
-    background: #ffa45c;
+    background: #28a745;
     color: #fff;
 }
 
@@ -12462,8 +12462,8 @@ h5,
 }
 
 .btn.btn-black:hover {
-    background: #ffa45c;
-    border: 1px solid #ffa45c;
+    background: #28a745;
+    border: 1px solid #28a745;
     color: #fff;
 }
 
@@ -12493,7 +12493,7 @@ h5,
 .img-2 .icon {
     width: 100px;
     height: 100px;
-    background: #ffa45c;
+    background: #28a745;
     -webkit-animation: pulse 2s infinite;
     animation: pulse 2s infinite;
     -webkit-border-radius: 50%;
@@ -12566,7 +12566,7 @@ h5,
     bottom: 0;
     content: '';
     opacity: 0;
-    background: #ffa45c;
+    background: #20c997;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -12581,7 +12581,7 @@ h5,
     padding: 2px 15px;
     color: #000000;
     font-weight: 300;
-    background: #ffa45c;
+    background: #20c997;
 }
 
 .product .img-prod img {
@@ -12691,7 +12691,7 @@ h5,
 }
 
 .product .text .bottom-area a {
-    color: #000000;
+    color: #28a745;
     width: 100%;
     background: #fff;
 }
@@ -12699,7 +12699,7 @@ h5,
 .product .text .bottom-area a.add-to-cart,
 .product .text .bottom-area a.buy-now {
     font-size: 13px;
-    color: #000000;
+    color: #28a745;
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -12710,12 +12710,12 @@ h5,
 }
 
 .product .text .bottom-area a.add-to-cart {
-    background: #000000;
+    background: #28a745;
     color: #fff;
 }
 
 .product .text .bottom-area a.add-to-cart:hover {
-    background: #ffa45c;
+    background: #28a745;
     color: #fff;
 }
 
@@ -12725,7 +12725,7 @@ h5,
 }
 
 .product .text .bottom-area a.buy-now:hover {
-    background: #ffa45c;
+    background: #28a745;
     color: #fff;
 }
 
