@@ -76,7 +76,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Winkel</a>
+            <a class="navbar-brand" href="index.html">Food Hub TT</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -93,7 +93,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Profle</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="{{ route('shop.index') }}">Shop</a>
+                            <a class="dropdown-item" href="{{ route('shop.index') }}">Store</a>
                             <a class="dropdown-item" href="{{ route('cart.index') }}">Cart</a>
                             <a class="dropdown-item" href="#">Order History</a>
 
@@ -143,9 +143,9 @@
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Products</span>
-                    </p>
-                    <h1 class="mb-0 bread">Collection Products</h1>
+                    <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Products</span> -->
+                    <!-- </p> -->
+                    <!-- <h1 class="mb-0 bread"></h1> -->
                 </div>
             </div>
         </div>
