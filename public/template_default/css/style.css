@@ -12936,7 +12936,7 @@ h5,
 }
 
 .table .thead-primary {
-    background: black;
+    background: #28a745;
 }
 
 .table .thead-primary tr th {
@@ -13294,7 +13294,7 @@ textarea.form-control {
 }
 
 .bg-black {
-    background: #000000 !important;
+    background: #55d78f !important;
 }
 
 .goto-here {
