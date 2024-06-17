@@ -119,15 +119,14 @@
                             <div class="form-group">
                                 <div class="col-md-12">
                                     <div class="radio">
-                                        <label><input type="radio" name="optradio" class="mr-2"> Check
-                                            Payment</label>
+                                        <label><input type="radio" name="optradio" class="mr-2"> Bitcoin</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12">
                                     <div class="radio">
-                                        <label><input type="radio" name="optradio" class="mr-2"> Paypal</label>
+                                        <label><input type="radio" name="optradio" class="mr-2"> Credit Card</label>
                                     </div>
                                 </div>
                             </div>

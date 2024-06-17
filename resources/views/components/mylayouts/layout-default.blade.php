@@ -59,12 +59,12 @@
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
                                     class="icon-phone2"></span></div>
-                            <span class="text">+ 1235 2355 98</span>
+                            <span class="text">1-868-223-FOOD</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
                                     class="icon-paper-plane"></span></div>
-                            <span class="text">youremail@email.com</span>
+                            <span class="text">info@foodtt.com</span>
                         </div>
                         <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
                             <span class="text">3-5 Business days delivery &amp; Free Returns</span>
@@ -91,11 +91,11 @@
                     @auth
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Profle</a>
+                            aria-haspopup="true" aria-expanded="false">Profile</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="{{ route('shop.index') }}">Store</a>
+                            <a class="dropdown-item" href="{{ route('shop.index') }}">Continue Shopping</a>
                             <a class="dropdown-item" href="{{ route('cart.index') }}">Cart</a>
-                            <a class="dropdown-item" href="#">Order History</a>
+                            <a class="dropdown-item" href="{{ route('cart.index') }}">Order History</a>
 
 
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -145,7 +145,7 @@
                 <div class="col-md-9 ftco-animate text-center">
                     <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Products</span> -->
                     <!-- </p> -->
-                    <!-- <h1 class="mb-0 bread"></h1> -->
+                    <!-- <h1 class="mb-0 bread">Test</h1> -->
                 </div>
             </div>
         </div>
@@ -175,7 +175,7 @@
             <div class="row mb-5">
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Winkel</h2>
+                        <h2 class="ftco-heading-2">Food Hub TT</h2>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -190,7 +190,6 @@
                         <ul class="list-unstyled">
                             <li><a href="#" class="py-2 d-block">Shop</a></li>
                             <li><a href="#" class="py-2 d-block">About</a></li>
-                            <li><a href="#" class="py-2 d-block">Journal</a></li>
                             <li><a href="#" class="py-2 d-block">Contact Us</a></li>
                         </ul>
                     </div>
@@ -217,13 +216,12 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain
+                                <li><span class="icon icon-map-marker"></span><span class="text">203 Apple St. Mountain
                                         View,
-                                        San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
-                                            210</span></a></li>
+                                        Tunapuna, St.Augustine, Trinidad & Tobago</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">1-868-223-FOOD</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">info@yourdomain.com</span></a></li>
+                                            class="text">info@foodtt.com</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -236,9 +234,8 @@
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="icon-heart color-danger"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </script> All rights reserved
+                            
                     </p>
                 </div>
             </div>
