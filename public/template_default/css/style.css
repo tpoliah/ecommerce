@@ -2916,14 +2916,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #28a745;
+    border-color: #28a745;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: #28a745;
+    border-color: #28a745;
 }
 
 .btn-primary:focus,
@@ -2943,8 +2943,8 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0062cc;
-    border-color: #005cbf;
+    background-color: #114A2B;
+    border-color: #114A2B;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -11533,7 +11533,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #ffa45c;
+    color: #28a745;
 }
 
 h1,
@@ -12416,7 +12416,7 @@ h5,
 .btn.btn-primary:hover {
     border: 1px solid #28a745;
     background: transparent;
-    color: #ffa45c;
+    color: #28a745;
 }
 
 .btn.btn-primary.btn-outline-primary {
@@ -13294,7 +13294,7 @@ textarea.form-control {
 }
 
 .bg-black {
-    background: #55d78f !important;
+    background: #114A2B !important;
 }
 
 .goto-here {
