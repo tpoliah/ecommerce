@@ -134,7 +134,7 @@
     <!-- Start Page Header -->
     <style>
         .hero-bread {
-            background-image: url('{{ url("template_default/images/bg_6.jpg") }}');
+            background-image: url('{{ url("template_default/images/bg_6.jpg") }}'); 
         }
     </style>
 

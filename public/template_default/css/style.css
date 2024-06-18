@@ -12408,7 +12408,7 @@ h5,
 }
 
 .btn.btn-primary {
-    background: #28a745;
+    background: #4B1131;
     border: 1px solid #28a745;
     color: #fff;
 }
@@ -12456,15 +12456,15 @@ h5,
 }
 
 .btn.btn-black {
-    background: #000000;
-    border: 1px solid #000000;
+    background: #4B1131;
+    border: 1px solid #4B1131;
     color: #fff;
 }
 
 .btn.btn-black:hover {
-    background: #28a745;
+    background: transparent;
     border: 1px solid #28a745;
-    color: #fff;
+    color: #28a745;
 }
 
 .btn.btn-black.btn-outline-white {
@@ -12936,7 +12936,7 @@ h5,
 }
 
 .table .thead-primary {
-    background: #28a745;
+    background: #4B1131;
 }
 
 .table .thead-primary tr th {
