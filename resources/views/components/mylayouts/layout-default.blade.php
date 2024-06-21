@@ -134,22 +134,71 @@
     <!-- Start Page Header -->
     <style>
         .hero-bread {
-            background-image: url('{{ url("template_default/images/bg_6.jpg") }}'); 
+            background-image: url('{{ url("template_default/images/bg_2.jpg") }}'); 
+        }
+
+        .slider-item {
+         object-fit:cover;  
+            height : 350px;
+        }
+
+        .subhead {
+            color: #fff; 
+            line-height: 1.3; 
+            font-weight: 400; 
+            font-family: "Amatic SC", cursive;
+        }
+
+        .subsubhead{
+            font-family: "Poppins", Arial, sans-serif;
         }
     </style>
 
+<section id="home-section" class="hero">
+		  <div class="home-slider owl-carousel">
+	      <div class="slider-item" style="background-image: url(../template_default/images/bg_1.jpg);">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
-    <div class="hero-wrap hero-bread">
+	            <div class="col-md-12 ftco-animate text-center">
+	              <h1 class="mb-2 subhead" style="color: #E7F9EF;">We serve Fresh Vegetables &amp; Fruits</h1>
+	              <h2 class="subheading mb-4 subsubhead" style="color:#E7F9EF;">We deliver organic vegetables &amp; fruits</h2>
+	              <!-- <p><a href="#" class="btn btn-primary">View Details</a></p> -->
+	            </div>
+
+	          </div>
+	        </div>
+	      </div>
+
+	      <div class="slider-item" style="background-image: url(../template_default/images/bg_7.jpg);">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+	            <div class="col-sm-12 ftco-animate text-center">
+	              <h1 class="mb-2 subhead" style="color:#E7F9EF;">100% Fresh &amp; Organic Foods</h1>
+	              <h2 class="subheading mb-4 subsubhead" style="color:#E7F9EF;">We deliver organic vegetables &amp; fruits</h2>
+	              <!-- <p><a href="#" class="btn btn-primary">View Details</a></p> -->
+	            </div>
+
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+    </section>
+
+    <!-- <div class="hero-wrap hero-bread">
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
-                    <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Products</span> -->
-                    <!-- </p> -->
-                    <!-- <h1 class="mb-0 bread">Test</h1> -->
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Products</span>
+                    </p>
+                    <h1 class="mb-0 bread">Test</h1>
                 </div>
             </div>
         </div>
-    </div>
+    </div>  -->
     <!-- End  Page Header -->
 
 

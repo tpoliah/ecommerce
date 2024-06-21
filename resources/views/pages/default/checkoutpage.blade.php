@@ -111,15 +111,15 @@
                             <div class="form-group">
                                 <div class="col-md-12">
                                     <div class="radio">
-                                        <label><input type="radio" name="optradio" class="mr-2"> Direct Bank
-                                            Tranfer</label>
+                                        <!-- <label><input type="radio" name="optradio" class="mr-2"> Direct Bank -->
+                                            <!-- Tranfer</label> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12">
                                     <div class="radio">
-                                        <label><input type="radio" name="optradio" class="mr-2"> Bitcoin</label>
+                                        <label><input type="radio" name="optradio" class="mr-2"> Debit Card</label>
                                     </div>
                                 </div>
                             </div>

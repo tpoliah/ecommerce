@@ -1,8 +1,9 @@
 <x-mylayouts.layout-default>
+    
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-lg-10 order-md-last">
+                <div class="col-md-10 col-lg-12 order-md-last">
                     <div class="row">
 
 
@@ -69,7 +70,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg-2 sidebar">
+                <!-- <div class="col-md-4 col-lg-2 sidebar">
                     <div class="sidebar-box-2">
                         <h2 class="heading mb-4"><a href="#">Store</a></h2>
                         
@@ -101,9 +102,9 @@
                             <li><a href="#">Skechers</a></li>
                             <li><a href="#">Jackets</a></li>
                             <li><a href="#">Coats</a></li>
-                            <li><a href="#">Jeans</a></li>
-                        </ul>
-                    </div>
+                            <li><a href="#">Jeans</a></li> -->
+                        <!-- </ul>
+                    </div> -->
                 </div>
             </div>
         </div>
