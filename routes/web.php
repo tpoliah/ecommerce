@@ -28,6 +28,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home.index');
 
 Route::get('/store', [ProductController::class, 'index'])->name('products.index');
+Route::get('/store/search', [ProductController::class, 'search'])->name('products.search');
 
 Route::get('/shop', [ProductController::class, 'index'])->name('shop.index');
 

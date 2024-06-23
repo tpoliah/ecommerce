@@ -3,21 +3,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-12 order-md-last">
-                    <div class="row">
-                    
-                    <div class="input-group rounded">
-  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
- 
-  <span class="input-group-text border-0" id="search-addon">
+                <div class="row">
+<div class="input-group rounded">
+    <form action="{{ route('products.search') }}" method="GET" class="d-flex w-100">
+    <input type="search" class="form-control rounded" name="query" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <button type="submit" class="input-group-text border-0" id="search-addon">
     <i class="fas fa-search"></i> 
-  </span>
-</div>                                     @foreach ($product_data as $data)          
-<div class="row mt-5">
-<span><br></span>
+</button>
+</form>
 </div>
+<div class="row mt-5">
+<!-- <span><br></span> -->
+</div>
+<div class="row"><br></div>
 
+    @foreach ($product_data as $data)
 
-                      <div class="col-sm-6 col-md-6 col-lg-4 ftco-animate">
+                        <div class="col-sm-6 col-md-6 col-lg-4 ftco-animate">
                             <div class="product">
                                 <a href="{{ $data->getLink() }}" class="img-prod"><img class="img-fluid"
                                         src="{{ $data->getImage() }}" alt="Colorlib Template">
