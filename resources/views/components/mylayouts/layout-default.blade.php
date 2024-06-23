@@ -375,6 +375,9 @@ autoPlay: true });
     </script>
 
 
+<!-- Chatbot -->
+<x-core.chatbot />
+
 
 
 
