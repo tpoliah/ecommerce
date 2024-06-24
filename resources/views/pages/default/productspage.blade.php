@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-10 col-lg-12 order-md-last">
                 <div class="row">
-<div class="input-group rounded">
+<div class="input-group rounded mb-5">
     <form action="{{ route('products.search') }}" method="GET" class="d-flex w-100">
     <input type="search" class="form-control rounded" name="query" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
     <button type="submit" class="input-group-text border-0" id="search-addon">
@@ -12,9 +12,9 @@
 </button>
 </form>
 </div>
-<div class="row mt-5">
-<!-- <span><br></span> -->
-</div>
+<!-- <div class="row mt-5">
+<span><br></span>
+</div> -->
 <div class="row"><br></div>
 
     @foreach ($product_data as $data)
