@@ -57,13 +57,8 @@
                             </div>
                         </div>
                         @endforeach
-
-
-
-
-
                     </div>
-                    <div class="row mt-5">
+                    <!-- <div class="row mt-5">
                         <div class="col text-center">
                             <div class="block-27">
                                 <ul>
@@ -80,10 +75,10 @@
                     </div>
                 </div>
 
-                <!-- <div class="col-md-4 col-lg-2 sidebar">
+                <div class="col-md-4 col-lg-2 sidebar">
                     <div class="sidebar-box-2">
                         <h2 class="heading mb-4"><a href="#">Store</a></h2>
-                        
+            
                     </div>
                     <div class="sidebar-box-2">
                         <h2 class="heading mb-4"><a href="#">Jeans</a></h2>
@@ -112,12 +107,12 @@
                             <li><a href="#">Skechers</a></li>
                             <li><a href="#">Jackets</a></li>
                             <li><a href="#">Coats</a></li>
-                            <li><a href="#">Jeans</a></li> -->
-                        <!-- </ul>
-                    </div> -->
+                            <li><a href="#">Jeans</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 </x-mylayouts.layout-default>
