@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -23,6 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $specialDealProducts = Product::where('quantity', '>', 0)
+            ->inRandomOrder()
+            ->take(4)
+            ->get();
+
+        return view('home', compact('specialDealProducts'));
+
+        // return view('home');
     }
 }
