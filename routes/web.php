@@ -5,6 +5,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CheckoutPaymentController;
 use App\Http\Controllers\CheckoutSuccessController;
 use App\Http\Controllers\DetailController;
+use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\subscriptions\SubscriptionController;
 use Illuminate\Support\Facades\Auth;
@@ -63,4 +64,8 @@ Route::middleware(['auth'])->group(function () {
 
     // comments here
     Route::get('subscriptions/success/{id}', [SubscriptionController::class, 'success'])->name('subscriptions.success');
+
+    // Route to show details for an order
+    Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('order-history.index');
+    Route::get('/order-history/{id}', [OrderHistoryController::class, 'show'])->name('order-history.show');
 });
