@@ -25,15 +25,15 @@
                             <td>{{ $count++ }}</td>
                             <td>{{ $order->order_no}}</td>
                             <td>{{$order->created_at}}</td>
-                            <td>{{$order->total}}</td>
+                            <td>${{$order->total}}</td>
                             <td>
-                                 <a class="btn btn-primary" 
+                                <a class="btn btn-primary" 
                                 href="{{ route('order-history.show', ['id' =>$order->id]) }}">Details</a>
                             </td>
                         </tr>
-                           
+                    
 
-                                               
+
                         @endforeach
                     </tbody>
                 </table>

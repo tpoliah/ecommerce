@@ -1915,12 +1915,12 @@ pre code {
 .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #FFF;
 }
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
+    border-bottom: 2px solid #4B1131;
 }
 
 .table tbody+tbody {
@@ -11510,10 +11510,10 @@ a.text-dark:focus {
 body {
     font-family: "Open Sans", Arial, sans-serif;
     background: #fff;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.3;
     font-weight: 400;
-    color: gray;
+    color: #3B3B3B;
 }
 
 body.menu-show {
@@ -11620,12 +11620,12 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
-    font-size: 10px;
+    font-size: 14px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 20px;
     padding-right: 20px;
-    font-weight: 400;
+    font-weight: 600;
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -12409,7 +12409,7 @@ h5,
 
 .btn.btn-primary {
     background: #4B1131;
-    border: 1px solid #28a745;
+    border: 1px solid #4B1131;
     color: #fff;
 }
 
@@ -12932,7 +12932,7 @@ h5,
 }
 
 .table th {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .table .thead-primary {
