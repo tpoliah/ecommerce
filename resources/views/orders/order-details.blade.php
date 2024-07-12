@@ -53,14 +53,14 @@
                                 <tbody>
                                 
 @php($count = 1)
-@foreach ($product_data as $product)
+@foreach ($orderProducts as $data)
     <tr>
         <td>{{ $count++ }}</td>
-        <td><img style="width: 80px; height: 80px" src="{{ $product->getImage() }}" alt="Image"></td>
-        <td>{{ $product->title }}</td>
-        <td>{{ $product->pivot->quantity }}</td>
-        <td>${{ $product->pivot->price }}</td>
-        <td>${{ CustomerHelper::formatPrice($product->pivot->price * $product->pivot->quantity) }}</td>
+        <td><img style="width: 80px; height: 80px" src="{{ $data->product->getImage() }}" alt="Image"></td>
+        <td>{{ $data->product->title }}</td>
+        <td>{{ $data->product->quantity }}</td>
+        <td>${{ $data->product->price }}</td>
+        <td>${{ CustomHelper::formatPrice($data->product->price * $data->product->quantity) }}</td>
     </tr>
 @endforeach
 

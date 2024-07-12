@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Address;
 use App\Models\Order;
+use App\Models\OrderProduct;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 
@@ -30,14 +31,14 @@ class OrderHistoryController extends Controller
         ->paidOrders()
         ->first();
 
+        $orderProducts = OrderProduct::with('product')->where('order_id', $order->id)->get();
+
         if (empty($order)) {
             abort(404);
         }
 
-        $product_data = $order->product_data;
-
         // dd($order_data);
 
-        return view('orders.order-details', compact('user', 'order', 'address', 'product_data'));
+        return view('orders.order-details', compact('user', 'order', 'address', 'orderProducts'));
     }
 }
