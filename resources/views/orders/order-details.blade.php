@@ -23,11 +23,11 @@
                         <div class="row pb-5 p-5">
                             <div class="col-md-6">
                                 <p class="font-weight-bold mb-4">Customer Information</p>
-                                <p class="mb-1">{{ $user->name }}</p>
-                                <p class="mb-1">{{ $address->line_1 }}</p>
-                                <p class="mb-1">{{ $address->line_2 }}</p>
-                                <p class="mb-1">{{ $address->contact }}</p>
-                                <p class="mb-1">{{ $address->email }}</p>
+                                <p class="mb-1">Name: {{ $user->name }}</p>
+                                <p class="mb-1">Address: {{ $address->line_1 }}</p>
+                                <p class="mb-1">City: {{ $address->city }}</p>
+                                <p class="mb-1">Tel: {{ $address->contact }}</p>
+                                <p class="mb-1">Email: {{ $address->email }}</p>
                             </div>
 
                             <div class="col-md-6 text-right">
@@ -46,7 +46,7 @@
                                     border: 1.2px solid #114A2B;">
                                     <thead class="bg-dark text-white">
                                         <tr>
-                                            <th class="border-0 text-uppercase small font-weight-bold">ID</th>
+                                            <th class="border-0 text-uppercase small font-weight-bold">LineID</th>
                                             <th class="border-0 text-uppercase small font-weight-bold">Item</th>
                                             <th class="border-0 text-uppercase small font-weight-bold">Description</th>
                                             <th class="border-0 text-uppercase small font-weight-bold">Quantity</th>

@@ -22,7 +22,7 @@ class AddressSeeder extends Seeder
                 'last_name' => 'Poliah',
                 'email' => 'tigannapoliah@mail.com',
                 'contact' => '701-7724',
-                'line_1' => '4 Privet Drive, Little Whinging',
+                'line_1' => '4 Privet Drive, Little Whinging Road',
                 'line_2' => null,
                 'city' => 'Surrey',
                 'state' => 'Trinidad',
