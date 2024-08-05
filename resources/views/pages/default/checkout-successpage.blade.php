@@ -6,6 +6,11 @@
     <h1>Your purchase was successful</h1>  
     </div>
 </div>
+</div>
+
+
+
+
 </x-mylayouts.layout-default>
 
 
