@@ -64,7 +64,7 @@
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
                                     class="icon-paper-plane"></span></div>
-                            <span class="text">info@foodtt.com</span>
+                            <span class="text">info@foodhubtt.com</span>
                         </div>
                         <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
                             <span class="text">3-5 Business days delivery &amp; Free Returns</span>
@@ -271,7 +271,7 @@
                                         Tunapuna, St.Augustine, Trinidad & Tobago</span></li>
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">1-868-223-FOOD</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">info@foodtt.com</span></a></li>
+                                            class="text">info@foodhubtt.com</span></a></li>
                             </ul>
                         </div>
                     </div>
