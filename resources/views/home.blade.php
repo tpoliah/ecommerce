@@ -78,4 +78,101 @@
         </div>
     </section>
 <br>
+<section class="ftco-section testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate">
+                    <h2 class="mb-4">Our Satisfied Customer Reviews</h2>
+                    <p>Shopping with this online grocery store has been a game-changer. 
+                       The service is consistently reliable, and the fresh produce is always top quality. 
+                       I also appreciate the easy-to-navigate website and regular promotions. 
+                       It’s made grocery shopping so much easier!”
+                       Highly recommend!"</p>
+                </div>
+            </div>
+
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel">
+                        <div class="item">
+                            <div class="testimony-wrap p-4 pb-5">
+                                <div class="user-img mb-5"
+                                    style="background-image: url('template_default/images/person_1.jpg')">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-5 pl-4 line">“I’ve been using this online grocery store for a few months now, 
+                                                               and I couldn’t be happier! The selection is fantastic, 
+                                                               and I always find what I need. The delivery is prompt, 
+                                                               and the groceries always arrive in perfect condition. 
+                                                               Plus, the user-friendly website makes shopping a breeze. 
+                                                               Highly recommend!”</p>
+                                    <p class="name">Paul Law</p>
+                                    <span class="position">Marketing Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap p-4 pb-5">
+                                <div class="user-img mb-5"
+                                    style="background-image: url('template_default/images/person_2.jpg')">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-5 pl-4 line">Excellent experience from start to finish. 
+                                                               The grocery store offers a great range of products, 
+                                                               including some hard-to-find items. The delivery was prompt, 
+                                                               and everything arrived well-packaged and in excellent condition. 
+                                                               Customer support is outstanding too. 
+                                                               Will definitely be ordering again!”</p>
+                                    <p class="name">James Rose</p>
+                                    <span class="position">Creative Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap p-4 pb-5">
+                                <div class="user-img mb-5"
+                                    style="background-image: url('template_default/images/person_3.jpg')">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-5 pl-4 line">“I was skeptical about ordering groceries online, but this store has exceeded my expectations. 
+                                                               The quality of the products is top-notch, and I appreciate the detailed product descriptions. 
+                                                               The delivery was seamless and the customer service team was incredibly helpful when I had a question. 
+                                                               Five stars!”</p>
+                                    <p class="name">Michael Thor</p>
+                                    <span class="position">Financial Analyst</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap p-4 pb-5">
+                                <div class="user-img mb-5"
+                                    style="background-image: url('template_default/images/person_4.jpg')">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-5 pl-4 line">“I’ve tried several online grocery services, and this one is by far the best. 
+                                                               The website is intuitive, and the checkout process is smooth. 
+                                                               I love the variety of options available, and the eco-friendly packaging is a nice touch. 
+                                                               Delivery is always on time, and the fresh items are perfect every time.”
+</p>
+                                    <p class="name">Clarke Kent </p>
+                                    <span class="position">IT Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+        </div>
+    </section>
+    <br>
 </x-mylayouts.layout-default>
