@@ -26,7 +26,7 @@
 <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+                <div class="col-md-4 offset-4 p-md-5 img img-2 d-flex justify-content-center align-items-center"
                     style="background-image: url(images/about.jpg);">
                     <a href='template_default/images/video.mp4'
                         class="icon popup-vimeo d-flex justify-content-center align-items-center">
