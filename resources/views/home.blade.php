@@ -135,7 +135,7 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-5 pl-4 line">Excellent experience from start to finish. 
+                                     <p class="mb-5 pl-4 line">Excellent experience from start to finish. 
                                                                The grocery store offers a great range of products, 
                                                                including some hard-to-find items. The delivery was prompt, 
                                                                and everything arrived well-packaged and in excellent condition. 
