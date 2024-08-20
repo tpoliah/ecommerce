@@ -88,14 +88,16 @@
                             <div class="py-3 px-5 text-right text-light">
                                 <div class="mb-2 font-weight-bold">Discount</div>
                                 <div class="h2 text-light font-weight-light">
-                                    {{ CustomHelper::calculateOrderDiscount($order->subtotal, $order->total) }}%
+                                    -$10.00
+
+                                    <!-- {{ CustomHelper::calculateOrderDiscount($order->subtotal, $order->total) }}% -->
                                 </div>
                             </div>
 
                             <div class="py-3 px-5 text-right text-light">
                                 <div class="mb-2 font-weight-bold">Shipping</div>
                                 <div class="h2 text-light font-weight-light">
-                                    $10.00
+                                    $13.00
                                 </div>
                             </div>
 

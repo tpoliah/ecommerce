@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -29,8 +30,12 @@ class LoginController extends Controller
      */
     // protected $redirectTo = RouteServiceProvider::HOME;
 
-    protected function authenticated(Request $request)
+    protected function authenticated(Request $request, $user)
     {
+        if (Auth::user()->role == 'admin') {
+            return redirect()->route('admin.products.index')->with('Success', 'Welcome Admin');
+        }
+
         return redirect()->route('store.index')->with('success', 'You were logged in successfully');
     }
 

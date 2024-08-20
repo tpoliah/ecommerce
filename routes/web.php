@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\AdminProductController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CheckoutPaymentController;
@@ -68,4 +69,9 @@ Route::middleware(['auth'])->group(function () {
     // Route to show details for an order
     Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('order-history.index');
     Route::get('/order-history/{id}', [OrderHistoryController::class, 'show'])->name('order-history.show');
+});
+
+// Route to show the Admin Page
+Route::prefix('admin')->middleware(['auth', 'isAdmin'])->name('admin.')->group(function () {
+    Route::resource('products', AdminProductController::class);
 });
