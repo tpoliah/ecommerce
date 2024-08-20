@@ -92,6 +92,13 @@
                                 </div>
                             </div>
 
+                            <div class="py-3 px-5 text-right text-light">
+                                <div class="mb-2 font-weight-bold">Shipping</div>
+                                <div class="h2 text-light font-weight-light">
+                                    $10.00
+                                </div>
+                            </div>
+
 
                             <div class="py-3 px-5 text-right text-light">
                                 <div class="mb-2 font-weight-bold">Subtotal</div>
