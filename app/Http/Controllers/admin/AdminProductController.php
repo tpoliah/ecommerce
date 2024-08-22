@@ -3,40 +3,58 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class AdminProductController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display page to showall products.
      */
     public function index()
     {
-        //
+        $product_data = Product::all();
+
+        return view('admin.template_pages_default.admin-view-products',
+            compact('product_data'));
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the page for adding a new a product.
      */
     public function create()
     {
-        //
+        return view('admin.template_pages_default.admin-add-products');
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store inserts products into the database.
      */
     public function store(Request $request)
     {
-        //
+        $product_data = new Product();
+        $product_data->product_title = $request->product_title;
+        $product_data->product_short_description = $request->product_short_description;
+        $product_data->product_full_description = $request->product_full_description;
+        $product_data->product_price = $request->product_price;
+        $product_data->product_quantity = $request->product_quantity;
+        $product_data->product_image_path = $request->product_image_path;
+
+        $product_data->product_title = $request->product_title;
+
+        $product_data->product_category = $request->product_category;
+        $product_data->product_group = $request->product_group;
+        $product_data->product_is_active = $request->product_is_active;
+        $product_data->save();
+
+        return redirect()->route('admin.products.index')->with('message', 'Product successfully created');
     }
 
     /**
-     * Display the specified resource.
+     * Display page to show only one product.
      */
     public function show(string $id)
     {
-        //
     }
 
     /**
@@ -44,7 +62,10 @@ class AdminProductController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $product_data = Product::findOrFail($id);
+
+        return view('admin.template_pages_default.admin-edit-products',
+            compact('data'));
     }
 
     /**
@@ -52,7 +73,22 @@ class AdminProductController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $product_data = Product::findOrFail($id);
+        $product_data->product_title = $request->product_title;
+        $product_data->product_short_description = $request->product_short_description;
+        $product_data->product_full_description = $request->product_full_description;
+        $product_data->product_price = $request->product_price;
+        $product_data->product_quantity = $request->product_quantity;
+        $product_data->product_image_path = $request->product_image_path;
+
+        $product_data->product_title = $request->product_title;
+
+        $product_data->product_category = $request->product_category;
+        $product_data->product_group = $request->product_group;
+        $product_data->product_is_active = $request->product_is_active;
+        $product_data->save();
+
+        return redirect()->route('admin.products.edit', ['product' => $id])->with('message', 'Product successfully updated');
     }
 
     /**
@@ -60,6 +96,9 @@ class AdminProductController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        // Code not in use
+        Product::destroy($id);
+
+        return redirect()->route('admin.products.index')->with('message', 'Product successfully removed');
     }
 }

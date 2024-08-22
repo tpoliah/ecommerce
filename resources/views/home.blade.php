@@ -1,6 +1,6 @@
 <x-mylayouts.layout-default>
 <br>
-<div class="container">
+<!-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -21,7 +21,7 @@
 </div>
 <br>
 <br>
-<br>
+<br> -->
 <br>
 <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
         <div class="container">
