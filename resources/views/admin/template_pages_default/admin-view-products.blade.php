@@ -30,15 +30,15 @@
                                 <td>{{ $count }}</td>
                                 <td><img style="width: 70px; height: 80px" src="{{ $data->getImage() }}" alt="image">
                                 </td>
-                                <td>{{ $data->product_title }}</td>
-                                <td>${{ $data->product_price }}</td>
+                                <td>{{ $data->title }}</td>
+                                <td>${{ $data->price }}</td>
                                 <td>
 
 
 
 
                                     <a class="btn btn-primary btn-sm"
-                                        href="{{ route('store.index', ['id' => $data->id]) }}" target="_blank">View</a>
+                                        href="{{ route('shop.details', ['id' => $data->id]) }}" target="_blank">View</a>
                                     <a class="btn btn-primary btn-sm"
                                         href="{{ route('admin.products.edit', ['product' => $data->id]) }}">
                                         Edit</a>

@@ -62,10 +62,11 @@ class AdminProductController extends Controller
      */
     public function edit(string $id)
     {
-        $product_data = Product::findOrFail($id);
+        $data = Product::findOrFail($id);
 
         return view('admin.template_pages_default.admin-edit-products',
             compact('data'));
+
     }
 
     /**
