@@ -70,10 +70,10 @@
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
                                 <div class="user-img mb-5"
-                                    style="background-image: url('template_default/images/person_1.jpg')">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
+                                    style="background-image: url('{{asset('template_default/images/person_1.jpg')}}')">
+                                    <!-- <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left" style="width: 10px; border-radius:50%;"></i>
+                                    </span> -->
                                 </div>
                                 <div class="text">
                                     <p class="mb-5 pl-4 line">“I’ve been using this online grocery store for a few months now, 
@@ -90,10 +90,10 @@
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
                                 <div class="user-img mb-5"
-                                    style="background-image: url('template_default/images/person_2.jpg')">
-                                    <span class="quote d-flex align-items-center justify-content-center">
+                                    style="background-image: url({{asset('template_default/images/person_2.jpg')}})">
+                                    <!-- <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
-                                    </span>
+                                    </span> -->
                                 </div>
                                 <div class="text">
                                     <p class="mb-5 pl-4 line">Excellent experience from start to finish. 
@@ -110,10 +110,10 @@
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
                                 <div class="user-img mb-5"
-                                    style="background-image: url('template_default/images/person_3.jpg')">
-                                    <span class="quote d-flex align-items-center justify-content-center">
+                                    style="background-image: url({{asset('template_default/images/person_3.jpg')}})">
+                                    <!-- <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
-                                    </span>
+                                    </span> -->
                                 </div>
                                 <div class="text">
                                     <p class="mb-5 pl-4 line">“I was skeptical about ordering groceries online, but this store has exceeded my expectations. 
@@ -128,10 +128,10 @@
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
                                 <div class="user-img mb-5"
-                                    style="background-image: url('template_default/images/person_4.jpg')">
-                                    <span class="quote d-flex align-items-center justify-content-center">
+                                    style="background-image: url({{asset('template_default/images/person_4.jpg')}})">
+                                    <!-- <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
-                                    </span>
+                                    </span> -->
                                 </div>
                                 <div class="text">
                                     <p class="mb-5 pl-4 line">“I’ve tried several online grocery services, and this one is by far the best. 

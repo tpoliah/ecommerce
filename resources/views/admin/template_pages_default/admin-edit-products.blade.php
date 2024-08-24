@@ -21,42 +21,42 @@
                     <div class="form-group">
                         <label for="product_title">Product Title:</label>
                         <input type="text" value="{{ $data->title }}" class="form-control" id="product_title"
-                            name="product_title">
+                            name="title" required>
                     </div>
 
                     <div class="form-group">
                         <label for="product_short_description">Short Description:</label>
                         <textarea class="form-control" rows="3" id="product_short_description"
-                            name="product_short_description">{{ $data->short_description }}</textarea>
+                            name="short_description" required>{{ $data->short_description }}</textarea>
                     </div>
 
                     <div class="form-group">
                         <label for="product_full_description">Long Description:</label>
                         <textarea class="form-control" rows="5" id="product_full_description"
-                            name="product_full_description">{{ $data->full_description }}</textarea>
+                            name="full_description">{{ $data->full_description }}</textarea>
                     </div>
 
                     <div class="form-group">
                         <label for="product_price">Price:</label>
                         <input type="text" value="{{ $data->price }}" class="form-control" id="product_price"
-                            name="product_price">
+                            name="price" required>
                     </div>
 
                     <div class="form-group">
                         <label for="product_quantity">Quantity:</label>
                         <input type="text" value="{{ $data->quantity }}" class="form-control"
-                            id="product_quantity" name="product_quantity">
+                            id="product_quantity" name="quantity" required>
                     </div>
 
                     <div class="form-group">
                         <label for="product_image_path">Image Path:</label>
                         <input type="text" value="{{ $data->image_path}}" class="form-control"
-                            id="product_image_path" name="product_image_path">
+                            id="product_image_path" name="image_path" required>
                     </div>
                     <div class="form-group">
                         <label for="product_image">Image:</label>
                         <input type="text" value="{{ $data->image }}" class="form-control" id="product_image"
-                            name="product_image">
+                            name="image_name">
                         <input type="file" class="form-control" id="product_image_upload" name="product_image_upload">
 
                         <div class="card flex d-flex">
@@ -81,12 +81,12 @@
                     <div class="form-group">
                         <label for="product_category">Category:</label>
                         <input type="text" value="{{ $data->category }}" class="form-control"
-                            id="product_category" name="product_category">
+                            id="product_category" name="category" required>
                     </div>
 
                     <div class="form-group">
                         <label for="product_group">Group:</label>
-                        <select class="form-control" id="product_group" name="product_group">
+                        <select class="form-control" id="product_group" name="group" required>
 
 
                             <option value="{{ $data->group }}">{{ Str::ucfirst($data->product_group) }}</option>
@@ -102,15 +102,15 @@
 
 
                     <div class="form-group">
-                        <label for="product_is_active">Is active:</label>
-                        <select class="form-control" id="product_is_active" name="product_is_active">
+                        <label for="product_is_active">Product Status:</label>
+                        <select class="form-control" id="product_is_active" name="product_status" required>
 
-                            @if($data->status)
-                            <option value="1">Yes</option>
-                            <option value="0">No</option>
+                            @if($data->status == 'active')
+                            <option value="active" selected>Active</option>
+                            <option value="inactive">Inactive</option>
                             @else
-                            <option value="0">No</option>
-                            <option value="1">Yes</option>
+                            <option value="inactive" selected>Inactive</option>
+                            <option value="active">Active</option>
 
                             @endif
                         </select>

@@ -75,18 +75,16 @@ class AdminProductController extends Controller
     public function update(Request $request, string $id)
     {
         $product_data = Product::findOrFail($id);
-        $product_data->product_title = $request->product_title;
-        $product_data->product_short_description = $request->product_short_description;
-        $product_data->product_full_description = $request->product_full_description;
-        $product_data->product_price = $request->product_price;
-        $product_data->product_quantity = $request->product_quantity;
-        $product_data->product_image_path = $request->product_image_path;
+        $product_data->title = $request->title;
+        $product_data->short_description = $request->short_description;
+        $product_data->full_description = $request->full_description;
+        $product_data->price = $request->price;
+        $product_data->quantity = $request->quantity;
+        $product_data->image_path = $request->image_path;
 
-        $product_data->product_title = $request->product_title;
+        $product_data->category = $request->category;
 
-        $product_data->product_category = $request->product_category;
-        $product_data->product_group = $request->product_group;
-        $product_data->product_is_active = $request->product_is_active;
+        $product_data->status= $request->product_status;
         $product_data->save();
 
         return redirect()->route('admin.products.edit', ['product' => $id])->with('message', 'Product successfully updated');
