@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-<head>
 
-</head>
+    <head>
 
+    </head>
+    <link rel="icon" href="{{asset ('template_default/images/logo.ico')}}" type="image/x-icon">
     <title>Food Hub TT</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -136,59 +137,59 @@
     <!-- Start Page Header -->
     <style>
         .hero-bread {
-            background-image: url('{{ url("template_default/images/bg_2.jpg") }}'); 
+            background-image: url('{{ url("template_default/images/bg_2.jpg") }}');
         }
 
         .slider-item {
-         object-fit:cover;  
-            height : 350px;
+            object-fit: cover;
+            height: 350px;
         }
 
         .subhead {
-            color: #fff; 
-            line-height: 1.3; 
-            font-weight: 400; 
+            color: #fff;
+            line-height: 1.3;
+            font-weight: 400;
             font-family: "Amatic SC", cursive;
         }
 
-        .subsubhead{
+        .subsubhead {
             font-family: "Poppins", Arial, sans-serif;
         }
     </style>
 
-<section id="home-section" class="hero">
-		  <div class="home-slider owl-carousel">
-	      <div class="slider-item" style="background-image: url({{ url('template_default/images/bg_1.jpg') }})">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+    <section id="home-section" class="hero">
+        <div class="home-slider owl-carousel">
+            <div class="slider-item" style="background-image: url({{ url('template_default/images/bg_1.jpg') }})">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
-	            <div class="col-md-12 ftco-animate text-center">
-	              <h1 class="mb-2 subhead" style="color: #E7F9EF;">We serve Fresh Vegetables &amp; Fruits</h1>
-	              <h2 class="subheading mb-4 subsubhead" style="color:#E7F9EF;">We deliver organic vegetables &amp; fruits</h2>
-	              <!-- <p><a href="#" class="btn btn-primary">View Details</a></p> -->
-	            </div>
+                        <div class="col-md-12 ftco-animate text-center">
+                            <h1 class="mb-2 subhead" style="color: #E7F9EF;">We serve Fresh Vegetables &amp; Fruits</h1>
+                            <h2 class="subheading mb-4 subsubhead" style="color:#E7F9EF;">We deliver organic vegetables &amp; fruits</h2>
+                            <!-- <p><a href="#" class="btn btn-primary">View Details</a></p> -->
+                        </div>
 
-	          </div>
-	        </div>
-	      </div>
+                    </div>
+                </div>
+            </div>
 
-	      <div class="slider-item" style="background-image: url({{ url('template_default/images/bg_1.jpg') }})">
+            <div class="slider-item" style="background-image: url({{ url('template_default/images/bg_1.jpg') }})">
 
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
-	            <div class="col-sm-12 ftco-animate text-center">
-	              <h1 class="mb-2 subhead" style="color:#E7F9EF;">100% Fresh &amp; Organic Foods</h1>
-	              <h2 class="subheading mb-4 subsubhead" style="color:#E7F9EF;">We deliver organic vegetables &amp; fruits</h2>
-	              <!-- <p><a href="#" class="btn btn-primary">View Details</a></p> -->
-	            </div>
+                        <div class="col-sm-12 ftco-animate text-center">
+                            <h1 class="mb-2 subhead" style="color:#E7F9EF;">100% Fresh &amp; Organic Foods</h1>
+                            <h2 class="subheading mb-4 subsubhead" style="color:#E7F9EF;">We deliver organic vegetables &amp; fruits</h2>
+                            <!-- <p><a href="#" class="btn btn-primary">View Details</a></p> -->
+                        </div>
 
-	          </div>
-	        </div>
-	      </div>
-	    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- <div class="hero-wrap hero-bread">
@@ -228,9 +229,9 @@
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Food Hub TT</h2>
-                        <p>Savor the Flavor, Taste the Tradition”? 
-                           It captures the essence of enjoying delicious 
-                           food while embracing the local culture.</p>
+                        <p>Savor the Flavor, Taste the Tradition”?
+                            It captures the essence of enjoying delicious
+                            food while embracing the local culture.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                             <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -289,7 +290,7 @@
                         Copyright &copy;<script>
                             document.write(new Date().getFullYear());
                         </script> All rights reserved
-                            
+
                     </p>
                 </div>
             </div>
@@ -353,18 +354,19 @@
 
 
     <script>
-        $(document).ready(function () {
-$("#news-slider").owlCarousel({
-items: 3,
-itemsDesktop: [1199, 3],
-itemsDesktopSmall: [980, 2],
-itemsMobile: [600, 1],
-navigation: true,
-navigationText: ["", ""],
-pagination: true,
-autoPlay: true });
+        $(document).ready(function() {
+            $("#news-slider").owlCarousel({
+                items: 3,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [980, 2],
+                itemsMobile: [600, 1],
+                navigation: true,
+                navigationText: ["", ""],
+                pagination: true,
+                autoPlay: true
+            });
 
-});
+        });
     </script>
 
 
@@ -372,16 +374,30 @@ autoPlay: true });
     {{-- Today's Deal Source: https://snippets.wrappixel.com/single-service-section-with-slider/ --}}
     <script>
         $('.feature-35-owl').owlCarousel({
-	loop: true,
-	margin: 30,
-	responsiveClass: true,
-	responsive: { 0:{ items:1, nav:false }, 1000:{ items:2, nav:false }, 1650:{ items:3, nav:false, loop:false } }
-});
+            loop: true,
+            margin: 30,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: false
+                },
+                1650: {
+                    items: 3,
+                    nav: false,
+                    loop: false
+                }
+            }
+        });
     </script>
 
 
-<!-- Chatbot -->
-<x-core.chatbot />
+    <!-- Chatbot -->
+    <x-core.chatbot />
 
 
 
