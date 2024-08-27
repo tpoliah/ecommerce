@@ -82,6 +82,7 @@ class CheckoutPaymentController extends Controller
         }
 
         $order->order_products()->saveMany($records);
+        $user->products()->detach();
 
         if ($payment == 'stripe') {
             return redirect($stripe_checkout->getUrl());

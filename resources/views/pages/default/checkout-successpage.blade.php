@@ -82,8 +82,8 @@
                                                             and the groceries always arrive in perfect condition. 
                                                             Plus, the user-friendly website makes shopping a breeze. 
                                                             Highly recommend!”</p>
-                                    <p class="name">Paul Law</p>
-                                    <span class="position">Marketing Director</span>
+                                    <p class="name">Clarke Kent</p>
+                                    <span class="position">IT Specialist</span>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
                                                             Customer support is outstanding too. 
                                                             Will definitely be ordering again!”</p>
                                     <p class="name">James Rose</p>
-                                    <span class="position">IT Specialist</span>
+                                    <span class="position">Marketing Director</span>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                                                             I love the variety of options available, and the eco-friendly packaging is a nice touch. 
                                                             Delivery is always on time, and the fresh items are perfect every time.”
 </p>
-                                    <p class="name">Clarke Kent </p>
+                                    <p class="name">Paul Law</p>
                                     <span class="position">Creative Director</span>
                                 </div>
                             </div>

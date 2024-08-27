@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- <title>Winkel - Free Bootstrap 4 Template by Colorlib</title> -->
-    <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
 
+</head>
+
+    <title>Food Hub TT</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
