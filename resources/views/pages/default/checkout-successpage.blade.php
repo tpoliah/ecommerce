@@ -103,7 +103,7 @@
                                                             Customer support is outstanding too. 
                                                             Will definitely be ordering again!”</p>
                                     <p class="name">James Rose</p>
-                                    <span class="position">Creative Director</span>
+                                    <span class="position">IT Specialist</span>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                                                             Delivery is always on time, and the fresh items are perfect every time.”
 </p>
                                     <p class="name">Clarke Kent </p>
-                                    <span class="position">IT Specialist</span>
+                                    <span class="position">Creative Director</span>
                                 </div>
                             </div>
                         </div>
