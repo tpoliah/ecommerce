@@ -72,6 +72,6 @@ Route::middleware(['auth'])->group(function () {
 });
 
 // Route to show the Admin Page
-Route::prefix('admin')->middleware(['auth', 'isAdmin'])->name('admin.')->group(function () {
+Route::prefix('admins')->middleware(['auth', 'isAdmin'])->name('admin.')->group(function () {
     Route::resource('products', AdminProductController::class);
 });
