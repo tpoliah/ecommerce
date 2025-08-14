@@ -82,21 +82,26 @@ class User extends Authenticatable
     public function activeSubscriptions(): BelongsToMany
     {
         return $this->belongsToMany(Subscription::class, 'subscription_orders')
-        ->withPivot('id', 'group_id', 'checkout_id', 'checkout_subscription_id', 'status', 'cancel_at', 'payment_status')
-        ->where(function (Builder $query) {
-            $query->where('status', 'active')
-            ->orWhere(function (Builder $query) {
-                $query->where('status', 'pending_cancel')
-                ->where('cancel_at', '>', now());
-            });
-        })
-        ->withTimestamps()
-        ->reorder('created_at', 'desc');
+            ->withPivot('id', 'group_id', 'checkout_id', 'checkout_subscription_id', 'status', 'cancel_at', 'payment_status')
+            ->where(function (Builder $query) {
+                $query->where('status', 'active')
+                    ->orWhere(function (Builder $query) {
+                        $query->where('status', 'pending_cancel')
+                            ->where('cancel_at', '>', now());
+                    });
+            })
+            ->withTimestamps()
+            ->reorder('created_at', 'desc');
     }
 
     /* ====================== FUNCTION ============================== */
     public function getGroups(): array
     {
         return [1];
+    }
+
+    public function isAdmin()
+    {
+        return $this->role === 'admin';
     }
 }

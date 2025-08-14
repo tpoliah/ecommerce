@@ -80,7 +80,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">Food Hub TT</a>
+<<<<<<< HEAD
                 <!-- <img src="{{asset ('template_default/images/logo.ico')}}" -->
+=======
+            <!-- <img src="{{asset ('template_default/images/logo.ico')}}" -->
+>>>>>>> c9f4ec3d3c33c8a39ef4edba6aa4fa995db2fed1
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -101,6 +105,10 @@
                             <a class="dropdown-item" href="{{ route('cart.index') }}">Cart</a>
                             <a class="dropdown-item" href="{{ route('order-history.index') }}">Order History</a>
 
+                            @if (auth()->user()->isAdmin())
+                            <a class="dropdown-item" href="{{ route('admin.products.index') }}">
+                                Product Management</a>
+                            @endif
 
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">Logout</a>
