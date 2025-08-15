@@ -47,14 +47,14 @@ class ProductResource extends Resource
                     ->required()
                     ->numeric()
                     ->default(20),
-                                Forms\Components\TextInput::make('image_path')
+                Forms\Components\TextInput::make('image_path')
                     ->default('/images/products/')
                     ->readOnly()
                     ->required(),
                 // Forms\Components\FileUpload::make('image_name')
                 //     ->image()
                 //     ->required(),
-Forms\Components\FileUpload::make('image_name')
+                Forms\Components\FileUpload::make('image_name')
                     ->image()
                     ->disk('images')
                  ->required(),
