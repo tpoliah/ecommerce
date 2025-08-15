@@ -3,15 +3,12 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\OrderResource\Pages;
-use App\Filament\Resources\OrderResource\RelationManagers;
 use App\Models\Order;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class OrderResource extends Resource
 {
@@ -20,9 +17,10 @@ class OrderResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function getNavigationBadge(): ?string
-{
-    return static::getModel()::count();
-}
+    {
+        return static::getModel()::count();
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -35,10 +33,16 @@ class OrderResource extends Resource
                     ->maxLength(20),
                 Forms\Components\TextInput::make('subtotal')
                     ->required()
-                    ->numeric(),
+                    ->numeric()
+                    ->mask(fn (Forms\Components\TextInput\Mask $mask) => 
+                        $mask->money(prefix: 'TTD ', decimalPlaces: 2)
+                    ),
                 Forms\Components\TextInput::make('total')
                     ->required()
-                    ->numeric(),
+                    ->numeric()
+                    ->mask(fn (Forms\Components\TextInput\Mask $mask) => 
+                        $mask->money(prefix: 'TTD ', decimalPlaces: 2)
+                    ),
                 Forms\Components\TextInput::make('payment_provider')
                     ->required()
                     ->maxLength(255)
@@ -73,10 +77,10 @@ class OrderResource extends Resource
                 Tables\Columns\TextColumn::make('order_no')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('subtotal')
-                    ->numeric()
+                    ->money('TTD', true)
                     ->sortable(),
                 Tables\Columns\TextColumn::make('total')
-                    ->numeric()
+                    ->money('TTD', true)
                     ->sortable(),
                 Tables\Columns\TextColumn::make('payment_provider')
                     ->searchable(),
@@ -117,9 +121,7 @@ class OrderResource extends Resource
 
     public static function getRelations(): array
     {
-        return [
-            //
-        ];
+        return [];
     }
 
     public static function getPages(): array

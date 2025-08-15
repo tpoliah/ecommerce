@@ -42,7 +42,7 @@ class ProductResource extends Resource
                     ->required()
                     ->numeric()
                     ->default(0.00)
-                    ->prefix('$'),
+                    ->prefix('TTD'), // Changed from '$' to 'TTD'
                 Forms\Components\TextInput::make('quantity')
                     ->required()
                     ->numeric()
@@ -51,14 +51,10 @@ class ProductResource extends Resource
                     ->default('/images/products/')
                     ->readOnly()
                     ->required(),
-                // Forms\Components\FileUpload::make('image_name')
-                //     ->image()
-                //     ->required(),
                 Forms\Components\FileUpload::make('image_name')
                     ->image()
                     ->disk('images')
-                 ->required(),
-
+                    ->required(),
                 Forms\Components\TextInput::make('category')
                     ->required()
                     ->maxLength(20),
@@ -80,18 +76,15 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('price')
-                    ->money()
+                    ->money('TTD') // Specify 'TTD' as the currency
                     ->sortable(),
                 Tables\Columns\TextColumn::make('quantity')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\ImageColumn::make('Image')
-                    
-                    ->state(
-                        function (Model $record) {
-                            return $record->getImage();
-                        }
-                    )
+                    ->state(function (Model $record) {
+                        return $record->getImage();
+                    })
                     ->extraImgAttributes(['style' => 'object-fit: contain;'])
                     ->width(55)
                     ->height(55)
