@@ -1,4 +1,3 @@
-use Illuminate\Support\Facades\Date;
 <!DOCTYPE html>
 <html lang="en">
   <head>
